@@ -1,0 +1,488 @@
+html {
+   font-size: 100%;
+}
+
+body{
+   margin: 0;
+   padding: 0;
+   color: #333;
+   font-size: 1rem;
+   font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+}
+
+a {
+   color: #333;
+   text-decoration: none;
+}
+
+li {
+   list-style: none;
+}
+
+ul {
+   padding-inline-start: 0;
+   margin: 0;
+}
+
+/* header CSS */
+
+#header {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   position: fixed;
+   background-color: #fff;
+   z-index: 10;
+   margin: 0;
+}
+
+#header .logo-container {
+   display: flex;
+   align-items: center;
+   padding: 0 11%;
+   margin: 1rem 0;
+}
+
+.logo-container img {
+   width: 9.48rem;
+   height: 1.95rem;
+}
+
+#header nav {
+   background-color: #333;
+}
+
+#header .nav-menu {
+   display: flex;
+   gap: 3.75rem;
+   padding: 0.5rem 11%;
+   font-family: "Noto Sans JP";
+   font-size: 0.875rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1rem;
+}
+
+#header .nav-menu a {
+   color: #fff;
+}
+
+#header .nav-menu a:hover {
+   color: #555;
+}
+
+/* Pickup area CSS*/
+
+#pickup {
+   display: flex;
+   justify-content: space-between;
+   flex-grow: 1;
+   padding: 8rem 11% 4.5rem 11%;
+   max-width: 100%;
+}
+
+#pickup article {
+   display: flex;
+   flex-direction: column;
+   flex-shrink: 0;
+   max-width: 30%;
+}
+
+#pickup article h2 {
+   color: #333;
+   font-family: "Noto Sans JP";
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 1.5rem;
+
+}
+
+#pickup article img {
+   max-width: 100%;
+   max-height: 100%;
+   flex-grow: 1;
+}
+
+/* main area CSS */
+
+#container {
+   display: flex;
+   justify-content: space-between;
+   padding: 11% 4;
+   margin: 0;
+}
+
+#container main {
+   display: flex;
+   flex-direction: column;
+   width: 45%;
+   margin-left: 11%;
+   gap: 10rem;
+}
+
+#container main article {
+   display: flex;
+   flex-direction: column;
+   max-width: 47.4375rem;
+   max-height: 26.6875rem;
+   margin-bottom: 4rem;
+}
+
+#container main article h2 {
+   color: #333;
+   font-family: "Noto Sans JP";
+   font-size: 1.5rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+}
+
+#container main article .metadata {
+   display: flex;
+   gap: 1.25rem;
+   color: #333;
+   font-family: "Noto Sans JP";
+   font-size: 0.875rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   margin-bottom: 1rem;
+}
+
+#container main article p {
+   color: #333;
+   font-family: "Noto Sans JP";
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.5rem;
+   max-width: 42.5rem;
+}
+
+#container main article img {
+   max-width: 100%;
+   max-height: 100%;
+}
+
+/* aside area CSS */
+
+#container #sidebar {
+   display: flex;
+   flex-direction: column;
+   width: 25%;
+   margin-right: 11%;
+}
+
+#sidebar .author {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+#sidebar .author img {
+   max-width: 8.125rem;
+   max-height: 8.125rem;
+   border-radius: 50%;
+   border: 1px solid #555;
+}
+
+#sidebar h3 {
+   color: #333;
+   font-family: "Noto Sans JP";
+   font-size: 1.125rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+}
+
+#sidebar .author p {
+   color: #333;
+   font-family: "Noto Sans JP";
+   font-size: 0.875rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.3125rem;
+}
+
+#sidebar .ranking {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+#sidebar .ranking img {
+   max-width: 100%;
+   max-height: 100%;
+}
+
+#sidebar h4 {
+   color: var(--333333-font, #333);
+   font-family: "Noto Sans JP";
+   font-size: 0.875rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.3125rem;
+}
+
+#sidebar .archive div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   border-bottom: 1px solid #777;
+}
+
+#sidebar .archive li {
+   border-bottom: 1px solid #777;
+   color: var(--333333-font, #333);
+   font-family: "Noto Sans JP";
+   font-size: 0.875rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   padding: 1rem;
+}
+
+
+.readmore {
+   color: #333;
+   font-family: "Noto Sans";
+   font-size: 0.875rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   text-align: center;
+}
+
+.readmore a {
+   padding-bottom: 1px; 
+   position: relative;
+}
+
+.readmore a:hover {
+   color: #555;
+}
+
+.readmore a::after {
+   content: '';
+   position: absolute;
+   height: 1px;
+   width: 100%;
+   left: 0;
+   bottom: 0;
+   background: #333;
+}
+
+/* footer CSS */
+
+#footer {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   max-width: 100%;
+   margin-top: 8rem;
+   padding: 1.75rem 11%;
+   background-color: #eee;
+}
+ 
+#footer #utility {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: start;
+   max-width: 100%;
+}
+
+#footer h3 {
+   color: var(--333333-font, #333);
+   font-family: "Noto Sans JP";
+   font-size: 1.125rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   margin: 0 0 1.75rem 0;
+}
+
+#footer .about {
+   display: flex;
+   flex-direction: column;
+   gap: 1.25rem;
+   min-width: 20%;
+   max-width: 31%;
+   flex-shrink: 0;
+   margin: 0;
+}
+
+
+#footer .about p {
+   color: var(--333333-font, #333);
+   font-family: "Noto Sans JP";
+   font-size: 0.875rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.3125rem;
+   max-width: 100%;
+   margin: 0;
+}
+
+#footer .about-list {
+   color: var(--333333-font, #333);
+   font-family: "Noto Sans JP";
+   font-size: 0.875rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+}
+
+#footer .about-list img {
+   width: 0.75rem;
+   height: 0.5rem;
+   flex-shrink: 0;
+}
+
+#footer .shortcut {
+   display: flex;
+   flex-direction: column;
+   gap: 1.25rem;
+   min-width: 20%;
+   max-width: 31%;
+}
+
+#footer .shortcut li {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   padding: 0.92rem 0;
+   border-bottom: 1px solid #777;
+}
+
+#footer .shortcut li:first-child {
+   border-top: 1px solid #777;
+}
+
+#footer .item {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: start;
+   gap: 1.25rem;
+   min-width: 20%;
+   max-width: 31%;
+   scrollbar-width: auto;
+}
+
+#footer .item .twitter-tweet {
+   display: flex;
+   flex-shrink: 0;
+   max-width: 100%;
+   overflow: hidden;
+}
+
+#footer #copyright {
+   display: flex;
+   flex: 1;
+   justify-content: center;
+}
+
+#footer #copyright p {
+   color: var(--333333-font, #333);
+   font-family: "Noto Sans JP";
+   font-size: 0.75rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   margin: 0;
+}
+
+/* responsive CSS */
+
+@media screen and (max-width: 769px) {
+   html {
+      font-size: 75%;
+   }
+
+   #header .logo-container {
+      padding: 0 5%;
+   }
+
+   #header .nav-menu {
+      padding: 0 5%;
+      overflow: auto;
+      white-space: nowrap;
+   }
+
+   #header .nav-menu a {
+      display: inline-block;
+      text-align: center;
+      padding: 10px 0;
+      text-decoration: none;
+   }
+
+   #pickup {
+      flex-direction: column;
+      padding: 8rem 5% 0rem 5%;
+   }
+
+   #pickup article {
+      max-width: 100%;
+      margin-bottom: 1.875rem;
+   }
+
+   #container {
+      flex-direction: column;
+      padding: 4rem 5% 0 5%;
+   }
+
+   #container main {
+      width: 100%;
+      margin: 0;
+   }
+
+   #container main article {
+      max-width: 100%;
+      margin-bottom: 19%;
+   }
+
+   #container main article p {
+      margin: 0 5% 1.75rem 5%;
+      align-items: center;
+      justify-content: center;
+   }
+
+   #container #sidebar {
+      width: 100%;
+      margin: 35% 0 0 0;
+   }
+
+   #container #sidebar h3 {
+      margin-bottom: 2rem;
+   }
+
+   #footer {
+      padding: 1.75rem 5%;
+   }
+
+   #footer #utility {
+      flex-direction: column;
+   }
+
+   #footer .about {
+      max-width: 100%;
+      margin-bottom: 3.5rem;
+   }
+
+   #footer .shortcut {
+      max-width: 100%;
+      min-width: 100%;
+   }
+
+   #footer .item {
+      max-width: 100%;
+      min-width: 100%;
+      margin: 3.5rem 0;
+   }
+   
+}
